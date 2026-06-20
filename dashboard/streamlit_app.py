@@ -47,6 +47,13 @@ filtered_df = df[
     (df["hour"].between(hour_range[0], hour_range[1]))
 ]
 
+st.download_button(
+    label="📥 Download Filtered Data",
+    data=filtered_df.to_csv(index=False),
+    file_name="coffee_sales_filtered.csv",
+    mime="text/csv"
+)
+
 total_revenue = filtered_df["revenue"].sum()
 total_transactions = filtered_df["transaction_id"].nunique()
 total_quantity = filtered_df["transaction_qty"].sum()

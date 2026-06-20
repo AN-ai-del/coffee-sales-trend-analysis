@@ -1,59 +1,96 @@
-@"
-# Sales Trend and Time-Based Performance Analysis for Afficionado Coffee Roasters
+# Coffee Sales Trend Analysis
 
-## Project Overview
+Interactive Business Intelligence Dashboard built using Python, Pandas, Plotly and Streamlit.
 
-This project analyzes transaction-level coffee sales data to identify temporal sales trends, peak demand hours, busiest days, and store-level performance patterns.
+## Project Objective
 
-## Problem Statement
+Analyze coffee shop sales performance to identify:
 
-Afficionado Coffee Roasters has transaction-level sales data but lacks a structured view of sales trends over time. This project uses data analytics to support better staffing, store operations, and business decision-making.
+- Revenue trends
+- Store performance
+- Product performance
+- Customer purchasing behavior
+- Operational business insights
 
-## Objectives
+---
 
-- Identify overall sales trends across 2025
-- Determine busiest and slowest days of the week
-- Identify peak transaction hours
-- Compare temporal demand patterns across store locations
-- Support staff scheduling and operational planning
-
-## Tools and Technologies
+## Technologies Used
 
 - Python
 - Pandas
-- NumPy
-- Matplotlib
-- Seaborn
 - Plotly
 - Streamlit
-- Jupyter Notebook
-- Git and GitHub
+- Git & GitHub
 
-## Project Structure
+---
 
-```text
-coffee-sales-trend-analysis/
-│
-├── data/
-│   ├── raw/
-│   └── processed/
-│
-├── notebooks/
-│   └── EDA.ipynb
-│
-├── src/
-│   ├── data_cleaning.py
-│   ├── feature_engineering.py
-│   ├── analysis.py
-│   └── visualization.py
-│
-├── dashboard/
-│   └── streamlit_app.py
-│
-├── report/
-│
-├── images/
-│
-├── requirements.txt
-├── README.md
-└── .gitignore
+## Dataset Features
+
+- Transaction Quantity
+- Product Category
+- Product Type
+- Store Location
+- Transaction Time
+- Revenue
+
+---
+
+## Key Business Insights
+
+### Morning Rush Drives Revenue
+
+Peak sales occur between 8 AM and 10 AM.
+
+### Coffee and Tea Dominate Revenue
+
+These categories contribute the majority of total sales.
+
+### Store Performance is Consistent
+
+All three store locations perform similarly.
+
+### Evening Demand is Lower
+
+Revenue decreases significantly after 6 PM.
+
+---
+
+## Dashboard Features
+
+- Interactive Store Filters
+- Product Category Filters
+- Time Bucket Filters
+- Hour Range Filters
+- Download Filtered Data
+- Business Recommendations Section
+
+---
+
+## Dashboard Screenshots
+
+### Overview
+
+![Dashboard](assets/dashboard_overview.png)
+
+### Product Analysis
+
+![Products](assets/product_analysis.png)
+
+### Recommendations
+
+![Recommendations](assets/business_recommendations.png)
+
+---
+
+## Business Recommendations
+
+- Increase staffing during morning rush hours
+- Focus inventory planning on Coffee and Tea products
+- Introduce evening promotions
+- Use demand-based workforce scheduling
+
+---
+
+## Author
+
+Anushka Das
